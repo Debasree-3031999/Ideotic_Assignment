@@ -10,7 +10,7 @@ export default function LoginDet() {
         event.preventDefault()
         let e = document.getElementById("email").value
         let p = document.getElementById("pwd").value
-        let users = await axios.get("http://localhost:3000/users").then((res) => {
+        let users = await axios.get("https://user-details-list.onrender.com/users").then((res) => {
             // console.log(res.data);
             for (let x of res.data) {
                 // console.log("x",x);
@@ -38,7 +38,7 @@ export default function LoginDet() {
             password: p,
             name: n
         }
-        axios.post('http://localhost:3000/users', data).then(resp => {
+        axios.post('https://user-details-list.onrender.com/users', data).then(resp => {
             console.log(resp.data);
             alert(`Welcome ${n}! you're registered!`);
             localStorage.setItem("loggedIn", JSON.stringify(data))
