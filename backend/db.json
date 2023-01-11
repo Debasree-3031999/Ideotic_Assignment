@@ -17,6 +17,12 @@
       "password": "t",
       "name": "t",
       "id": 3
+    },
+    {
+      "email": "debasreeghosh1999@gmail.com",
+      "password": "1234",
+      "name": "Debasree Ghosh",
+      "id": 4
     }
   ]
 }

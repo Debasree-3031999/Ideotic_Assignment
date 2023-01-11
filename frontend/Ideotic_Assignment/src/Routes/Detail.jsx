@@ -17,8 +17,19 @@ export default function Detail() {
         return data.message
     })
     },[])
+    const logout=()=>{
+        alert(`${loggedIn.name} logging you out!`)
+        localStorage.setItem("ifLogged",false)
+        window.location="/"
+    }
+    let loggedIn=JSON.parse(localStorage.getItem("loggedIn"))
   return (
     <div>
+        {
+           loggedIn?<div>
+            <button onClick={logout}>Log-Out!</button>
+           </div>:"" 
+        }
         <div id="dogDetail">
             <div id="dogImg">
                 <img src={data} alt="dogPic" />

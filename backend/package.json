@@ -1,20 +1,12 @@
 {
-  "name": "backend",
+  "name": "json-server-vercel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Deploy JSON Server to Vercel",
+  "main": "server.js",
   "scripts": {
-    "start":"nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "json-server --watch db.json"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "mongoose": "^6.8.3",
-    "nodemon": "^2.0.20"
+    "json-server": "^0.17.0"
   }
 }

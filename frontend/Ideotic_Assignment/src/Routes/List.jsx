@@ -19,8 +19,21 @@ export default function List() {
         })
     },[])
     console.log("data: ",data);
+
+    const logout=()=>{
+        alert(`${loggedIn.name} logging you out!`)
+        localStorage.setItem("ifLogged",false)
+        window.location="/"
+    }
+
+    let loggedIn=JSON.parse(localStorage.getItem("loggedIn"))
   return (
     <div>
+        {
+           loggedIn?<div>
+            <button onClick={logout}>Log-Out!</button>
+           </div>:"" 
+        }
         <div id="dogCont">
             {
                 data.map((e,i)=>{
