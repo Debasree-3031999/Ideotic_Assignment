@@ -27,6 +27,7 @@ export default function Detail() {
     <div>
         {
            loggedIn?<div>
+            {loggedIn.name}<br />
             <button onClick={logout}>Log-Out!</button>
            </div>:"" 
         }
