@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { Link } from 'react-router-dom';
+import LoginCSS from './Login.module.css'
 
 export default function LoginDet() {
     let ifLogged = JSON.parse(localStorage.getItem("ifLogged")) || false;
@@ -56,14 +57,14 @@ export default function LoginDet() {
     }
     return (
         <div>
-            <div id="cont">{
-                !ifLogged ? <div><form onSubmit={login}>
+            <div className={LoginCSS.cont} id="cont">{
+                !ifLogged ? <div style={{display:"flex", justifyContent:"space-between"}}><form onSubmit={login}>
                     Email: <input type="email" name="Email" id="email" /><br />
                     Password: <input type="password" name="password" id="pwd" /><br />
                     <input type="submit" value="Login" />
                 </form>
 
-                    <hr />
+                    <hr style={{width:"1px",height:"100px"}}/>
 
                     <form onSubmit={reg}>
                         Email: <input type="email" id='regEmail' /><br />
