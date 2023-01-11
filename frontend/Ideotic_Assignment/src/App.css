@@ -1,4 +1,28 @@
 #dogCont{
   display: grid;
-  grid-template-columns: repeat(5,150px);
+  grid-template-columns: repeat(6,150px);
+  width: 70%;
+  margin: auto;
+  background-color: aquamarine;
+  padding: 2%;
+}
+
+h3{
+  text-align: center;
+}
+
+#dogDetail{
+  width: 40%;
+  background-color: bisque;
+  text-align: center;
+  padding: 2%;
+  margin: auto;
+}
+
+#dogImg{
+  width: 100%;
+}
+
+img{
+  width: 95%;
 }
