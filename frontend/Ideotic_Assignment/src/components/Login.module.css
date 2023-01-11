@@ -1,4 +1,19 @@
 .cont{
     border: 1px solid black;
     display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.formDiv{
+    display: flex;
+    margin: 3%;
+    margin: auto;
+
+}
+
+form{
+    margin: 5%;
+    background-color: antiquewhite;
+    padding: 1%;
 }
