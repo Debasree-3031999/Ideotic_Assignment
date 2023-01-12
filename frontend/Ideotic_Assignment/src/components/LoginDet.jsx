@@ -57,10 +57,11 @@ export default function LoginDet() {
     }
     return (
         <div>
-            <div className={LoginCSS.cont} id="cont">{
-                !ifLogged ? <div style={{display:"flex", justifyContent:"space-between"}}><form onSubmit={login}>
-                    Email: <input type="email" name="Email" id="email" /><br />
-                    Password: <input type="password" name="password" id="pwd" /><br />
+            <div  id="cont">{
+                !ifLogged ? <div className={LoginCSS.cont}><form onSubmit={login}>
+                    <h2>Login here!</h2>
+                Email: <input type="email" name="Email" id="email" /><br />
+                Password: <input type="password" name="password" id="pwd" /><br />
                     <input type="submit" value="Login" />
                 </form>
 
