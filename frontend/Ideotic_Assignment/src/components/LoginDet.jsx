@@ -43,8 +43,8 @@ export default function LoginDet() {
             console.log(resp.data);
             alert(`Welcome ${n}! you're registered!`);
             localStorage.setItem("loggedIn", JSON.stringify(data))
-                    localStorage.setItem("ifLogged", true)
-            window.location="/"
+            localStorage.setItem("ifLogged", true)
+            window.location = "/"
         }).catch(error => {
             console.log(error);
         });
@@ -57,22 +57,14 @@ export default function LoginDet() {
     }
     return (
         <div>
-<<<<<<< HEAD
-            <div  id="cont">{
-                !ifLogged ? <div className={LoginCSS.cont}><form onSubmit={login}>
-                    <h2>Login here!</h2>
-                Email: <input type="email" name="Email" id="email" /><br />
-                Password: <input type="password" name="password" id="pwd" /><br />
-=======
             <div className={LoginCSS.cont} id="cont">{
                 !ifLogged ? <div className={LoginCSS.formDiv}><form onSubmit={login}>
                     Email: <input type="email" name="Email" id="email" /><br />
                     Password: <input type="password" name="password" id="pwd" /><br />
->>>>>>> 62e5b33b9f424950aaef705d96f2347b1e692bf6
                     <input type="submit" value="Login" />
                 </form>
 
-                    <hr style={{width:"1px",height:"100px"}}/>
+                    <hr style={{ width: "1px", height: "100px" }} />
 
                     <form onSubmit={reg}>
                         Email: <input type="email" id='regEmail' /><br />

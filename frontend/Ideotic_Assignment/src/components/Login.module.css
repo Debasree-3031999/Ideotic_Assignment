@@ -1,11 +1,6 @@
 .cont{
     border: 1px solid black;
     display: flex;
-<<<<<<< HEAD
-    display:"flex";
-     justify-content:"space-between"
-}
-=======
     width: 50%;
     margin: auto;
 }
@@ -22,4 +17,3 @@ form{
     background-color: antiquewhite;
     padding: 1%;
 }
->>>>>>> 62e5b33b9f424950aaef705d96f2347b1e692bf6
