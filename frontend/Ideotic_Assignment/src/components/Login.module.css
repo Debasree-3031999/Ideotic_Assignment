@@ -3,17 +3,39 @@
     display: flex;
     width: 50%;
     margin: auto;
+    font-size: 1.001em;
+}
+
+input{
+    width: 80%;
 }
 
 .formDiv{
     display: flex;
     margin: 3%;
     margin: auto;
+    width: 100%;
 
+}
+
+hr{
+    width: 1px;
+    height: 100px;
 }
 
 form{
     margin: 5%;
     background-color: antiquewhite;
     padding: 1%;
+    /* width: 55%; */
+}
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+    .formDiv{
+        display: block;
+    }
+    hr{
+        width: 40%;
+        height: 0%;
+    }
 }

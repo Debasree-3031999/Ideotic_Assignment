@@ -59,17 +59,17 @@ export default function LoginDet() {
         <div>
             <div className={LoginCSS.cont} id="cont">{
                 !ifLogged ? <div className={LoginCSS.formDiv}><form onSubmit={login}>
-                    Email: <input type="email" name="Email" id="email" /><br />
-                    Password: <input type="password" name="password" id="pwd" /><br />
+                    Email: <br /><input type="email" name="Email" id="email" /><br />
+                    Password:<br /> <input type="password" name="password" id="pwd" /><br />
                     <input type="submit" value="Login" />
                 </form>
 
-                    <hr style={{ width: "1px", height: "100px" }} />
+                    <hr />
 
                     <form onSubmit={reg}>
-                        Email: <input type="email" id='regEmail' /><br />
-                        Password: <input type="password" name="password" id="regPwd" /><br />
-                        Name: <input type="text" id='name' /><br />
+                        Email:<br /> <input type="email" id='regEmail' /><br />
+                        Password:<br /> <input type="password" name="password" id="regPwd" /><br />
+                        Name:<br /> <input type="text" id='name' /><br />
                         <input type="submit" value="Register" />
                     </form>
                 </div> : <div style={{ display: "flex", justifyContent: "space-between" }}>
