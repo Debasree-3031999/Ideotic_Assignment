@@ -26,6 +26,9 @@ h3{
 img{
   width: 95%;
 }
+#dogDetail{
+  font-size: 1em;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 525px){
   #dogCont{

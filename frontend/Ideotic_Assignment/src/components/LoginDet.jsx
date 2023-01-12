@@ -21,6 +21,9 @@ export default function LoginDet() {
                     localStorage.setItem("ifLogged", true)
                     window.location = "/list"
                 }
+                else{
+                    alert("No user exists with these credentials!")
+                }
             }
         })
         console.log(e, p);

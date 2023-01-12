@@ -24,9 +24,9 @@ export default function Detail() {
     }
     let loggedIn=JSON.parse(localStorage.getItem("loggedIn"))
   return (
-    <div>
+    <div style={{fontSize:"1em"}}>
         {
-           loggedIn?<div>
+           loggedIn?<div style={{fontSize:"1.4em"}}>
             {loggedIn.name}<br />
             <button onClick={logout}>Log-Out!</button>
            </div>:"" 
@@ -34,7 +34,7 @@ export default function Detail() {
         <div id="dogDetail">
             <div id="dogImg">
                 <img src={data} alt="dogPic" />
-                <p className="dogName">{detail}</p>
+                <p className="dogName"><p style={{fontWeight:'bold'}}>Dog Name</p><h3>{detail}</h3></p>
             </div>
         </div>
     </div>
